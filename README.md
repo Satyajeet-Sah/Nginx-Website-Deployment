@@ -15,12 +15,16 @@ Deploy a simple website on an AWS EC2 Ubuntu instance using Nginx.
 
 ## EC2 Setup
 
+## EC2 Setup Steps
+
 1. Launched an Ubuntu EC2 instance.
-2. Created a Security Group.
-3. Allowed inbound ports:
-   - SSH (Port 22) from Admin IP (49.47.128.114/32)
-   - HTTP (Port 80) from Anywhere (0.0.0.0/0)
-4. Connected to the instance using SSH.
+2. Selected the `t3.micro` instance type.
+3. Created a new key pair for SSH access.
+4. Configured a Security Group with the following inbound rules:
+   - SSH (Port 22) from Admin IP (`49.47.128.114/32`)
+   - HTTP (Port 80) from Anywhere (`0.0.0.0/0`)
+5. Launched the instance.
+6. Connected to the instance using SSH.
 
 ---
 
