@@ -49,7 +49,7 @@ nginx -v
 ```bash
 systemctl status nginx
 ```
-
+---
 ## Website Deployment
 
 - Replaced the default Nginx page.
@@ -59,7 +59,7 @@ systemctl status nginx
   - Branch
   - Email
   - Current Date
-
+---
 Website Location:
 
 ```text
