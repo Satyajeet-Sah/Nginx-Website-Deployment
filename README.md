@@ -18,8 +18,8 @@ Deploy a simple website on an AWS EC2 Ubuntu instance using Nginx.
 1. Launched an Ubuntu EC2 instance.
 2. Created a Security Group.
 3. Allowed inbound ports:
-   - SSH (22)
-   - HTTP (80)
+   - SSH (Port 22) from Admin IP (49.47.128.114/32)
+   - HTTP (Port 80) from Anywhere (0.0.0.0/0)
 4. Connected to the instance using SSH.
 
 ---
