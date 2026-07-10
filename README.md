@@ -17,8 +17,8 @@ Deploy a simple website on an AWS EC2 Ubuntu instance using Nginx.
 
 ## EC2 Setup Steps
 
-1. Launched an Ubuntu EC2 instance.
-2. Selected the `t3.micro` instance type.
+1. Selected the Ubuntu Server 26.04 LTS as an Amazon Machine Image (AMI).
+2.  Used the `t3.micro` instance type.
 3. Created a new key pair for SSH access.
 4. Configured a Security Group with the following inbound rules:
    - SSH (Port 22) from Admin IP (`49.47.128.114/32`)
