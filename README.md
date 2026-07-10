@@ -1,4 +1,4 @@
-# Nginx-Website-Deployment
+# Nginx Website Deployment
 
 ## Objective
 
