@@ -13,8 +13,6 @@ Deploy a simple website on an AWS EC2 Ubuntu instance using Nginx.
 
 ---
 
-## EC2 Setup
-
 ## EC2 Setup Steps
 
 1. Selected the Ubuntu Server 26.04 LTS as an Amazon Machine Image (AMI).
