@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevOps Assignment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            justify-content: center;
+            display: flex;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            width: 450px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        p {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        strong {
+            color: #0073e6;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Student Information</h1>
+
+    <p><strong>Name:</strong> Satyajeet</p>
+    <p><strong>College:</strong> VIT University, Vellore</p>
+    <p><strong>Branch:</strong> Master of Computer Applications (MCA)</p>
+    <p><strong>Email:</strong> sahsatyajeet@gmail.com</p>
+    <p><strong>Current Date:</strong> <span id="currentDate"></span></p>
+</div>
+
+<script>
+    const today = new Date();
+    document.getElementById("currentDate").textContent = today.toLocaleDateString('en-GB');
+</script>
+
+</body>
+</html>
