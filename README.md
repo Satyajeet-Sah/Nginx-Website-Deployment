@@ -54,8 +54,9 @@ systemctl status nginx
 ---
 ## Website Deployment
 
-- Replaced the default Nginx page.
-- Hosted a custom HTML page containing:
+- Created a custom `index.html` page in the Nginx web root (`/var/www/html`).
+- Nginx served `index.html` instead of the default `index.nginx-debian.html` because `index.html` has higher priority in the default Nginx configuration (`/etc/nginx/sites-enabled/default`).
+- The webpage displays:
   - Name
   - College
   - Branch
