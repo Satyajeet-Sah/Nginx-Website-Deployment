@@ -1,102 +1,43 @@
-# Nginx Website Deployment with GitHub Actions CI/CD
+# AWS Web Server Deployment with CI/CD, Monitoring, Backup & Load Testing
 
-A hands-on DevOps project demonstrating automated deployment of a static website to an AWS EC2 Ubuntu instance using Nginx and GitHub Actions. Every code push to the `main` branch automatically deploys the latest website changes to the EC2 server through an SSH-based CI/CD pipeline.
+A production-style DevOps project demonstrating the deployment of a web server on AWS using modern DevOps practices.
 
----
+## Project Overview
 
-## 🚀 Project Overview
+This project demonstrates how to deploy a static website on an Ubuntu EC2 instance using Nginx and automate deployments with GitHub Actions. It also includes automated Amazon S3 backups, IAM role-based access, CloudWatch monitoring, dashboards, alarms, centralized log collection, and load testing using k6.
 
-This project demonstrates how to automate website deployment using GitHub Actions.
+## Architecture
 
-Instead of manually copying website files to the server after every update, the deployment process is fully automated. Whenever changes are pushed to the GitHub repository, GitHub Actions securely connects to the EC2 instance via SSH and updates the website automatically.
+![Architecture Diagram](architecture-diagram.png)
 
----
-
-## ✨ Key Features
-
-- Deploy a static website using Nginx
-- Host the website on AWS EC2 (Ubuntu)
-- Automated deployment with GitHub Actions
-- SSH-based secure deployment
-- Version-controlled website source code
-- Automatic website updates on every push to the `main` branch
-
----
-
-## 🛠 Technologies Used
+## Technologies Used
 
 - AWS EC2
-- Ubuntu Server
+- Ubuntu Linux
 - Nginx
-- Git
-- GitHub
+- Git & GitHub
 - GitHub Actions
-- YAML
-- SSH
+- Amazon S3
+- AWS IAM
+- Amazon CloudWatch
+- k6
+- Bash
 
----
+## Features
 
-## 🏗 Architecture
+- Deploy website on AWS EC2
+- Configure Nginx web server
+- CI/CD pipeline using GitHub Actions
+- Automated website deployment
+- Automated daily backup to Amazon S3
+- IAM role-based permissions
+- CloudWatch metrics and dashboards
+- CloudWatch alarms
+- CloudWatch log collection
+- Load testing with k6
+- Performance monitoring
 
-```
-Developer
-     │
-     │ git push
-     ▼
-GitHub Repository
-     │
-     ▼
-GitHub Actions Workflow
-     │
-SSH Connection
-     ▼
-AWS EC2 (Ubuntu)
-     │
-Git Pull
-     ▼
-Nginx Web Server
-     │
-     ▼
-Website Updated Automatically
-```
-
----
-
-## ☁ AWS Services Used
-
-- Amazon EC2
-- Security Groups
-
----
-
-## ⚙ EC2 Configuration
-
-- Ubuntu Server 24.04/26.04 LTS
-- Instance Type: t3.micro
-- SSH access using Key Pair
-- Security Group Configuration:
-  - SSH (22)
-  - HTTP (80)
-
----
-
-## 🔄 CI/CD Workflow
-
-The deployment pipeline is triggered automatically whenever code is pushed to the `main` branch.
-
-### Workflow Steps
-
-1. Push code to GitHub
-2. GitHub Actions starts automatically
-3. Repository is checked out
-4. SSH connection is established with the EC2 instance
-5. Navigate to the Nginx web directory
-6. Pull the latest changes from GitHub
-7. Website is updated instantly
-
----
-
-## 📁 Repository Structure
+## Repository Structure
 
 ```
 .
@@ -104,61 +45,31 @@ The deployment pipeline is triggered automatically whenever code is pushed to th
 │   └── workflows/
 │       └── deploy.yml
 ├── index.html
-└── README.md
+├── README.md
+└── AWS-Web-Server-Deployment-CI-CD-Monitoring-Backup-Load-Testing.pdf
 ```
 
----
+## Documentation
 
-## 🔐 GitHub Secrets Used
+The complete project documentation, including implementation steps, architecture, configuration, monitoring, screenshots, and performance testing, is available in the PDF below.
 
-The workflow securely authenticates using GitHub Secrets.
+**📄 AWS-Web-Server-Deployment-CI-CD-Monitoring-Backup-Load-Testing.pdf**
 
-| Secret | Purpose |
-|---------|---------|
-| EC2_HOST | EC2 Public IP |
-| EC2_USER | SSH Username |
-| EC2_SSH_KEY | Private SSH Key |
+## Key Learning Outcomes
 
----
+- AWS EC2 deployment
+- Linux server administration
+- Nginx configuration
+- GitHub Actions CI/CD
+- AWS IAM
+- Amazon S3 backups
+- CloudWatch monitoring
+- Infrastructure monitoring
+- Log management
+- Performance testing with k6
 
-## 📄 Deployment Workflow
-
-The GitHub Actions workflow performs the following deployment:
-
-- Trigger on push to `main`
-- Checkout repository
-- Connect to EC2 using SSH
-- Pull latest code
-- Deploy updated website automatically
-
----
-
-## 📸 Screenshots
-
-- AWS EC2 Instance
-- GitHub Actions Workflow
-- Successful Deployment Logs
-- Nginx Running
-- Live Website
-
----
-
-## 🎯 Learning Outcomes
-
-Through this project, I learned how to:
-
-- Deploy websites on AWS EC2
-- Configure and manage Nginx
-- Create GitHub Actions workflows
-- Automate deployments using CI/CD
-- Securely connect to remote servers using SSH
-- Use GitHub Secrets for secure authentication
-- Implement infrastructure automation for web deployment
-
----
-
-## 👨‍💻 Author
+## Author
 
 **Satyajeet**
 
-DevOps | AWS | Linux | GitHub Actions | Automation
+DevOps | AWS | Linux | CI/CD
