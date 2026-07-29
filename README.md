@@ -6,7 +6,7 @@ A production-style DevOps project demonstrating the deployment of a web server o
 
 This project demonstrates how to deploy a static website on an Ubuntu EC2 instance using Nginx and automate deployments with GitHub Actions. It also includes automated Amazon S3 backups, IAM role-based access, CloudWatch monitoring, dashboards, alarms, centralized log collection, and load testing using k6.
 
-## Architecture
+## Architecture Diagram
 
 ![Architecture Diagram](architecture-diagram.png)
 
